@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <audio id="clip1">
+        <source src="audio/Green.mp3"></source>
+    </audio>
+    <audio id="clip2">
+        <source src="audio/Red.mp3"></source>
+    </audio>
+    <audio id="clip3">
+        <source src="audio/Yellow.mp3"></source>
+    </audio>
+    <audio id="clip4">
+        <source src="audio/Blue.mp3"></source>
+    </audio>
+    <audio id="wrong">
+        <source src="audio/Wrong.mp3"></source>
+    </audio>
+</head>
+<body>
+    <div class="simon-container">
+        <div id="topleft"></div>
+        <div id="topright"></div>
+        <div id="bottomleft"></div>
+        <div id="bottomright"></div>
+        <div id="inner-circle">
+            <div class="container">
+                <h1>Simon</h1>
+                <button class="button" id="start">Start</button><br>
+                <label for="on"><input type="checkbox" class="toggle" id="on">POWER</label>
+                <label for="strict"><input type="checkbox" class="toggle" id="strict">STRICT</label>
+                <div id="turn">-</div>
+                <div class="count">
+                    COUNT
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
