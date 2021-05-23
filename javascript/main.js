@@ -78,16 +78,13 @@ function gameTurn() {
       if (order[flash] == 1) {
         playClip("clip1", "lightgreen");
         topLeft.style.backgroundColor = "lightgreen";
-      };
-      if (order[flash] == 2) {
+      } else if (order[flash] == 2) {
         playClip("clip2", "tomato");
         topRight.style.backgroundColor = "tomato";
-      };
-      if (order[flash] == 3) {
+      } else if (order[flash] == 3) {
         playClip("clip3", "yellow");
         bottomLeft.style.backgroundColor = "yellow";
-      };
-      if (order[flash] == 4) {
+      } else if (order[flash] == 4) {
         playClip("clip4", "lightskyblue");
         bottomRight.style.backgroundColor = "lightskyblue";
       };
@@ -96,7 +93,7 @@ function gameTurn() {
   }
 }
 
-function playClip(clip, color) {
+function playClip(clip) {
   if (noise) {
     let audio = document.getElementById(clip);
     audio.play();
@@ -222,6 +219,5 @@ function winGame() {
   on = false;
   win = true;
 }
-
 
 /* Classic Simon Game A Simon Game with HTML, CSS and JavaScript Thanks to Beau Carnes of FreeCodeCamp for the tutorial for the JavaScript. I made modifications to the HTML and CSS and recorded and used my own sounds. I also recorded a custom "error" sound for when you click the wrong color and added that to the JavaScript. Additional thanks to liubowolkova@codecademy who made some suggestions to help eliminate repeated code. :) */
